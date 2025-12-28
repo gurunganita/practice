@@ -4,93 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 102vh;
-            margin: 0;
-            background-color: #e1e9f1;
+     <style>
+        #button{
+            color:rgb(15, 65, 65);
         }
-
-        .box {
-            background-color: white;
-            padding: 25px;
-            width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        #button {
-            color: rgb(15, 65, 65);
-        }
-        .form-fields{
-            margin-bottom:15px;
-
-            margin:0 0 11 0;
-        }
-
-        .inline-wrap{
-            display: flex;
-                  justify-content: space-between;
-    
-        }
-    </style>
+     </style>
 </head>
-
 <body>
-
-<div class="box">
-    <h3 style="color:rgb(90, 170, 144);">Student Registration Form</h3>
-    <form action="" method="post" enctype="multipart/form-data" onsubmit="return alertMessage()">
-        <div class="inline-wrap">
-        <div class="form-fields">
-        <label >First Name:</label>
-        <input type="text" id="fname" placeholder="John Abraham">
-        </div>
-         <div class="form-fields">
-        <label >Middle Name:</label>
-        <input type="text" id="mname" placeholder="John Abraham">
-        </div>
-         </div>
-        <div class="form-fields">
-            <label >Last Name:</label>
-            <input type="text" id="lname" placeholder="John Abraham">
-        </div>
-       
-        <div class="form-fields">
+    <h3>Student Registration Form</h3>
+    <form action="" mehod="post" onsubmit="return alertMessage()">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="John Abraham"/><br>
         <label>Email:</label>
-        <input type="email" id="email" placeholder="john12@gmail.com">
-        </div>
-        <div class="form-fields">
+        <input type="email" id="email" placeholder="john12@gmail.com"/><br>
         <label>Password:</label>
-        <input type="password" id="pwd" placeholder="password">
-        </div>
-        <div class="form-fields">   
-        <input type="file" id="file">
-        </div>
-        <div class="form-fields">
-        <input type="checkbox" id="check">
-        <label>I agree to the terms and conditions</label>
-        </div>
-        <div class="form-fields">
-        <input type="radio" name="gender" value="male"> Male
-        <input type="radio" name="gender" value="female"> Female
-        <input type="radio" name="gender" value="other"> Other
-        <input type="radio" name="gender" value="prefer_not_say"> Prefer not to say 
-        <input type="submit" value="Submit" id="button">
-        </div>
-    </form>
-</div>
-<script>
-function alertMessage() {
+        <input type="text" id="pwd" placeholder="'password"/><br>
+        <br>
+        <input type="submit" value="Submit" id="button"/>
+       </form>
+     <script>
+function alertMessage(){
     alert("Thank you for submission!");
-    return false;
 }
-</script>
+     </script>
 </body>
 </html>
-<!-- semantic elements -->
