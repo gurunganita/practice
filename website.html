@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar </title>
+
+<style>
+    header{
+        padding: 10px 20px;
+    }
+
+    .header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        height: 40px;
+        width: 180px;
+    }
+
+    .nav-bar ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bar li{
+        margin: 0px 50px;
+        position: relative; /* Required for dropdown */
+    }
+
+    .nav-bar a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .button button{
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+
+    .click{
+        color: blue;
+    }
+
+    /* Dropdown styling */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%; /* Below parent */
+        left: 0;
+        background-color: white;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f2f2f2;
+    }
+
+    .nav-bar li:hover .dropdown-content {
+        display: block;
+    }
+    .image-section img{
+        width: 500px;
+        height:auto;
+        display: block;
+        margin-top: 155px;
+    }
+    .section-button button{
+margin-left:20px;
+    }
+    
+</style>
+</head>
+
+<body>
+    
+</style>
+</hea
+<header>
+    <div class="header-wrapper">
+
+        <div class="logo">
+            <img src="https://i0.wp.com/letslearn.asia/wp-content/uploads/2024/09/letslearn-new-logo.png?w=912&ssl=1">
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" style="color:blue;">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Courses</a></li>
+                <li>
+                    <a href="#">Events &#9662; </a>
+                    <div class="dropdown-content">
+                        <a href="#">Rocketry Workshop</a>
+                        <a href="#">Satellite Workshop</a>
+                        <a href="#">Presentation Challenge</a>
+                        <a href="#">It Quiz</a>
+                    </div>
+                </li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </nav>
+
+        <div class="button">
+            <button>Register Now</button>
+        </div>      
+    </div>
+</header>
+<section >
+    <div class="fcontent-wrapper" style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">  
+        <div class="text-center" style="flex: 1;">
+            <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/verified-symbol-icon.png" height="35px" width="35px"> <span style="height:100px ;">Trusted By 4000+ Students</span></p>
+            <h1> Best <br>
+                <span style="color: rgb(196, 98, 63);">It Training and Computer</span><br> 
+                <span style ="color: rgb(196, 98, 63);">Training Institute in Nepal</span>
+            </h1>
+            <p>
+                LetsLearn is a leading computer training and IT training institute in Kathmandu,
+                Nepal established in 2015. We have been providing professional IT and computer <br>
+                training in Nepal to help you excel in the today’s tech industry. Get expert<br> 
+                guidance from experienced trainers along with internship opportunities and certification<br> 
+                to experience the best learning experience.
+            </p>
+        </div>
+        <div class="image-section" style="flex: 1;">
+            <img src="https://letslearn.asia/wp-content/uploads/2025/10/ITtraininginstituteinnepal2.webp" style="width:100%; height:auto;">
+        </div>       
+    </div>
+    <div class="section-button">
+    <button style="background-color:aqua; ">Enroll Now</button>
+    <button >View all Courses</button>
+    </div>
+</section>
+
+</body>
+</html>
