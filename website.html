@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Navigation Bar </title>
-
 <style>
     header{
         padding: 10px 20px;
@@ -30,7 +29,7 @@
 
     .nav-bar li{
         margin: 0px 50px;
-        position: relative; /* Required for dropdown */
+        position: relative;
     }
 
     .nav-bar a{
@@ -47,12 +46,10 @@
     .click{
         color: blue;
     }
-
-    /* Dropdown styling */
     .dropdown-content {
         display: none;
         position: absolute;
-        top: 100%; /* Below parent */
+        top: 100%;
         left: 0;
         background-color: white;
         min-width: 150px;
@@ -80,29 +77,40 @@
         display: block;
         margin-top: 155px;
     }
-    .section-button button{
-margin-left:20px;
-    }
-    
+    .section-button{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.section-button button{
+    padding: 12px 22px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #5d90c5;
+    color: white;
+    transition: 0.3s ease;
+}
+.button button{
+    background-color:#5d90c5;
+    color:white;
+    transition: 0.3s ease;
+    border-radius:6px;
+    font-size:15px;
+}
 </style>
 </head>
-
-<body>
-    
-</style>
-</hea
 <header>
     <div class="header-wrapper">
-
         <div class="logo">
             <img src="https://i0.wp.com/letslearn.asia/wp-content/uploads/2024/09/letslearn-new-logo.png?w=912&ssl=1">
         </div>
-
         <nav class="nav-bar">
             <ul>
-                <li><a href="#" style="color:blue;">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Courses</a></li>
+                <li><a href="#" style="color:blue; ">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="ourcourses.html">Our Courses</a></li>
                 <li>
                     <a href="#">Events &#9662; </a>
                     <div class="dropdown-content">
@@ -112,10 +120,9 @@ margin-left:20px;
                         <a href="#">It Quiz</a>
                     </div>
                 </li>
-                <li><a href="#">Blogs</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
             </ul>
         </nav>
-
         <div class="button">
             <button>Register Now</button>
         </div>      
@@ -136,16 +143,15 @@ margin-left:20px;
                 guidance from experienced trainers along with internship opportunities and certification<br> 
                 to experience the best learning experience.
             </p>
+            <div class="section-button">
+    <button style="background-color:aqua;">Enroll Now</button>
+    <button>View all Courses</button>
+</div>
         </div>
         <div class="image-section" style="flex: 1;">
             <img src="https://letslearn.asia/wp-content/uploads/2025/10/ITtraininginstituteinnepal2.webp" style="width:100%; height:auto;">
         </div>       
     </div>
-    <div class="section-button">
-    <button style="background-color:aqua; ">Enroll Now</button>
-    <button >View all Courses</button>
-    </div>
 </section>
-
 </body>
 </html>
