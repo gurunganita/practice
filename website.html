@@ -3,10 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navigation Bar </title>
+<title>Navigation Bar</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
     header{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
         padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .header-wrapper{
@@ -20,6 +28,10 @@
         width: 180px;
     }
 
+    .nav-bar{
+        flex: 2;
+    }
+
     .nav-bar ul{
         display: flex;
         list-style: none;
@@ -28,24 +40,33 @@
     }
 
     .nav-bar li{
-        margin: 0px 50px;
+        margin: 0px 49px;
         position: relative;
     }
 
     .nav-bar a{
         text-decoration: none;
         color: black;
+        text-align:center;
         font-weight: 500;
     }
 
     .button button{
-        padding: 8px 15px;
+        display:flex;
+        padding: 9px 25px;
         cursor: pointer;
+        background-color: #5d90c5;
+        color: white;
+        border-radius: 6px;
+        border: none;
+        transition: 0.3s ease;
     }
+
 
     .click{
         color: blue;
     }
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -71,36 +92,125 @@
     .nav-bar li:hover .dropdown-content {
         display: block;
     }
+
+    section{
+        padding-top: 100px; 
+    }
+
     .image-section img{
         width: 500px;
         height:auto;
         display: block;
-        margin-top: 155px;
     }
-    .section-button{
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
 
-.section-button button{
-    padding: 12px 22px;
-    font-size: 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #5d90c5;
-    color: white;
-    transition: 0.3s ease;
-}
-.button button{
-    background-color:#5d90c5;
-    color:white;
-    transition: 0.3s ease;
-    border-radius:6px;
-    font-size:15px;
-}
+    .section-button{
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .section-button button{
+        padding: 12px 22px;
+        font-size: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #5d90c5;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    .section-button button:hover{
+        background-color: #4572a3;
+    }
+
+    footer{
+        background-color: #1c1c1c;
+        color: white;
+        padding: 40px 20px;
+        margin-top: 40px;
+    }
+
+    .footer-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer-section{
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer-section h3{
+        margin-bottom: 15px;
+        color: #5d90c5;
+    }
+
+    .footer-section ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section ul li{
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul li a{
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .footer-section ul li a:hover{
+        color: #5d90c5;
+    }
+
+    .newsletter input[type="email"]{
+        padding: 8px;
+        width: 70%;
+        border-radius: 4px;
+        border: none;
+        margin-right: 5px;
+    }
+
+    .newsletter button{
+        padding: 8px 15px;
+        background-color: #5d90c5;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .newsletter button:hover{
+        background-color: #4572a3;
+    }
+
+    .footer-bottom{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        border-top: 1px solid #444;
+        padding-top: 15px;
+        color: #ccc;
+    }
+
+    .social-links a{
+        color: white;
+        margin-right: 10px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .social-links a:hover{
+        color: #5d90c5;
+    }
 </style>
 </head>
+<body>
+
 <header>
     <div class="header-wrapper">
         <div class="logo">
@@ -108,7 +218,7 @@
         </div>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#" style="color:blue; ">Home</a></li>
+                <li><a href="#" style="color:blue;">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="ourcourses.html">Our Courses</a></li>
                 <li>
@@ -117,7 +227,7 @@
                         <a href="#">Rocketry Workshop</a>
                         <a href="#">Satellite Workshop</a>
                         <a href="#">Presentation Challenge</a>
-                        <a href="#">It Quiz</a>
+                        <a href="#">IT Quiz</a>
                     </div>
                 </li>
                 <li><a href="blogs.html">Blogs</a></li>
@@ -128,13 +238,13 @@
         </div>      
     </div>
 </header>
-<section >
+<section>
     <div class="fcontent-wrapper" style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">  
         <div class="text-center" style="flex: 1;">
-            <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/verified-symbol-icon.png" height="35px" width="35px"> <span style="height:100px ;">Trusted By 4000+ Students</span></p>
+            <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/verified-symbol-icon.png" height="35px" width="35px"> <span style="height:100px;">Trusted By 4000+ Students</span></p>
             <h1> Best <br>
-                <span style="color: rgb(196, 98, 63);">It Training and Computer</span><br> 
-                <span style ="color: rgb(196, 98, 63);">Training Institute in Nepal</span>
+                <span style="color: rgb(196, 98, 63);">IT Training and Computer</span><br> 
+                <span style="color: rgb(196, 98, 63);">Training Institute in Nepal</span>
             </h1>
             <p>
                 LetsLearn is a leading computer training and IT training institute in Kathmandu,
@@ -144,14 +254,56 @@
                 to experience the best learning experience.
             </p>
             <div class="section-button">
-    <button style="background-color:aqua;">Enroll Now</button>
-    <button>View all Courses</button>
-</div>
+                <button style="background-color:aqua;">Enroll Now</button>
+                <button>View all Courses</button>
+            </div>
         </div>
         <div class="image-section" style="flex: 1;">
             <img src="https://letslearn.asia/wp-content/uploads/2025/10/ITtraininginstituteinnepal2.webp" style="width:100%; height:auto;">
         </div>       
     </div>
 </section>
+
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-section">
+            <h3>Welcome!</h3>
+            <p>Explore our courses and find the perfect path for you.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>01-5923180, 9841117580</p>
+            <p>info@letslearn.asia</p>
+            <p>SRD Complex, New Plaza Rd, Kathmandu 44600</p>
+        </div>
+        <div class="footer-section newsletter">
+            <h3>Subscribe Newsletter</h3>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        Copyright© 2025 LetsLearn Pvt. Ltd.
+    </div>
+</footer>
+
 </body>
 </html>
