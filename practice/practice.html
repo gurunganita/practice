@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        #des{
+           padding:1px 18px 3px 6px;
+            border-spacing:80px;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(202, 226, 224);
+        }
+        table{
+            margin-left:400px;
+            margin-right:421px;
+            margin-top:50px;
+            display:block;
+        }
+        h2{
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Schedule</h2>
+    <table border="1" background-color="blue">
+        <tr >
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="8">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+<tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <th colspan="5">LUNCH</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td id="des" rowspan="6">Project</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+    </table>
+<br>
+    <h2 style="text-align:center;">Contact Details</h2>
+    <table border="1" > 
+        <tr>
+            <th>Id </th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+
+
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Alice</td>
+            <td>Brown</td>
+            <td>Chancellor</td>
+        </tr>
+          <tr>
+            <th>Age</th>
+            <td>15</td>
+            <td>16</td>
+            <td>18</td>
+        </tr>
+          <tr>
+            <th>Contact</th>
+            <td>9800000023</td>
+            <td>9800000033</td>
+            <td>9800000013</td>
+         </tr>
+    </table>
+</body>
+</html>
